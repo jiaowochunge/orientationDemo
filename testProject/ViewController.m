@@ -58,4 +58,10 @@
     }
 }
 
+//无效，因为tabBarController只支持竖屏
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskAll;
+}
+
 @end
