@@ -17,12 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,17 +45,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-#if 1
     WebViewController *vc = [[WebViewController alloc] init];
     vc.urlString = @"http://www.qiushibaike.com";
     [self presentViewController:vc animated:YES completion:nil];
-#else
-    UIImagePickerController *pickerVC = [[UIImagePickerController alloc]init];
-    pickerVC.delegate = self;
-    pickerVC.allowsEditing = YES;
-    pickerVC.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    [self presentViewController:pickerVC animated:YES completion:nil];
-#endif
 }
 
 @end

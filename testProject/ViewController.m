@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "Student.h"
 
 @interface ViewController ()
 
@@ -56,23 +55,6 @@
     self.progress = [_textField.text integerValue];
     if (_progress > 100) {
         _progress = 100;
-    }
-}
-
-- (void)testEntity
-{
-    NSDictionary *dic = @{@"id":@"12345678", @"name":@"AAA", @"age":@"18", @"sex":@0};
-    id<Student> student = createEntityFromDictionary(dic);
-    student.translateDic = @{@"sid":@"id"};
-    student.name = @"BBB";
-    NSLog(@"name = %@, id = %@", student.name, student.sid);
-    
-    NSDictionary *dic2 = @{@"name":@"testAR", @"std":@{@"name":@"AAA", @"age":@"18"}, @"stdArr":@[@{@"name":@"A1", @"age":@"18"},@{@"name":@"A2", @"age":@"18"}]};
-    id<TestOppo> testObj = createEntityFromDictionary(dic2);
-    student = testObj.std;
-    NSLog(@"name = %@", student.name);
-    for (id<Student> std in testObj.stdArr) {
-        NSLog(@"name = %@", std.name);
     }
 }
 

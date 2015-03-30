@@ -145,24 +145,6 @@
                                     <rect key="frame" x="16" y="337" width="368" height="255"/>
                                 </variation>
                             </webView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qmb-TC-IVC" customClass="ProgressView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
-                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
-                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="85" y="120" width="200" height="20"/>
-                                </variation>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -190,7 +172,6 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="qrz-65-3ha"/>
-                                <exclude reference="Qmb-TC-IVC"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="YjG-8G-RCL"/>
@@ -202,7 +183,6 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="qrz-65-3ha"/>
-                                <include reference="Qmb-TC-IVC"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="YjG-8G-RCL"/>
